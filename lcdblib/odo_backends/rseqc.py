@@ -1,6 +1,6 @@
 """Backends for shapeshifting RseQC output to pandas dataframes."""
 import re
-from odo import resource
+from odo import resource, append
 import pandas as pd
 
 
@@ -18,10 +18,10 @@ def resource_infer_experiment(uri, **kwargs):
 
     """
     header = [
-        'Fraction of reads failed to assign',
-        'Fraction of reads on same strand as gene',
-        'Fraction of reads on opposite strand as gene',
-        'Read type',
+        'Fraction_reads_failed_assignment',
+        'Fraction_reads_on_gene_strand',
+        'Fraction_reads_opposite_gene_strand',
+        'Read_type',
         ]
 
     with open(uri, 'r') as fh:
