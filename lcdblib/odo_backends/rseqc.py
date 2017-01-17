@@ -1,6 +1,6 @@
 """Backends for shapeshifting RseQC output to pandas dataframes."""
 import re
-from odo import resource, append
+from odo import resource
 import pandas as pd
 
 
