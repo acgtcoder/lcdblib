@@ -10,3 +10,4 @@ pyyaml
 pybedtools
 pysam
 biopython
+odo
